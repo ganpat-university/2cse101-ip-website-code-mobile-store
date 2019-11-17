@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accesories</title>
+	<link rel="stylesheet" href="products.css" />
+	<style>
+	
+	.account{float: right;position: fixed; right: 90px;z-index: 1;line-height: 40px;border-radius: 6px;}
+	
+	.footer{zoom: 200%;width: 100%;height: 300px;background: #000;color:white;}
+		.footer h3{display:inline;}
+		.footer h4{color:white;}
+		.footertd{vertical-align:top;text-decoration:none;color:white;}
+	
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height:40px;
+  outline:none;
+}
+
+.dropbtn:hover .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  float:left;
+  position: fixed;
+  left:20px;
+  line-height: 40px;
+  z-index:1;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+	</style>
+	<script src="products.js"></script>
+	<script>
+	function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}	
+	</script>
+</head>
+
+<body>
+    <div class="header">
+		<span class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search Here....</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#i11pro">Apple</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#f11pro">Oppo</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#v15">Vivo</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#k20 pro">Redmi</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#note10pro">Samsung</a>
+    <a href="#Huvawvei">Huwavei</a>
+    <a href="#Micromax">Micromax</a>
+  </div>
+</span>
+	
+            <span class="logo">Mobile Store</span>
+            <span>Your Stores Your Place</span>
+			<span class="account"><a href="file:///E:/IP_PROJECT/Account/Account.html?btn=Sign+In"><img src="account.png" width="50px" height="40px"></img></a></span>
+            <span class="crt"><a href="file:///E:/IP_PROJECT/Account/Account.html?btn=Sign+In"><img src="shopping_cart.png" width="50px" height="40px"></img></a></span>
+    </div>
+    <div class="menu" style="z-index:1;">
+            <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/index.html">Home</a>
+            <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html">Products</a>
+			<a href="file:///E:/IP_PROJECT/INDEX/$new%20index/accesories/accesories.html" class="active">Accesories</a>
+            <a href="file:///E:/IP_PROJECT/about%20(2).html">About</a>
+            <a href="file:///E:/IP_PROJECT/contact%20(2).html">Contact</a>
+    </div>
+    <h1>Boat Rockerz 400 On-Ear Bluetooth Headphones (Carbon Black)</h1>
+    <div id="i11pro" class="full" id="full">
+			
+						<table>
+						<tr></tr>
+						&nbsp;&nbsp;
+						<tr>
+						<td>
+						<div class="img-zoom-container">
+						<span id="div1"><img id="img" src="boatrockerz.jpg" width="700" height="900" style="z-index:1;"></span>
+						<div id="result" class="img-zoom-result"></div>
+						<script>
+						imageZoom("img", "result");
+						</script>
+						</div>
+						</td>
+						</tr>
+						</table>
+						&nbsp;&nbsp;
+                            <table align="right" id="contenttable" border="1px"  cellpadding="10px">							
+                            <tr>
+                            <td><h3>40 millimeter drivers</h3></td>
+                            <td><h3>HD clarity sound with super bass</h3></td>
+                            <td><h3>Compatible with all mobiles, laptop and tablets</h3></td>  
+                        </tr>
+                        <tr>
+                            <td><h3>Built-in noise cancelling microphone</h3></td>                            
+                            <td><h3>Wireless range of 10 meters</h3></td>
+                            <td><h3>Battery Life: 8 hours of playback and 100 hours of standby</h3></td>
+                        </tr>    
+                            
+                            <tr>
+                                <td colspan="3">
+                                    <center>                                
+                                <b>Price: &#8377 1,499.00 /-</b>
+                                    </center>
+                                </td>
+                            </tr>
+							<tr>
+							<td colspan="2">
+							<center>
+							<a href="file:///E:/IP_PROJECT/Account/Account.html?btn=Sign+In">
+							<input id="submit" type="button" name="addtocart" value="Add To Cart"/></a>
+							</center>
+							</td>
+							
+							<td>
+							<center>
+							<a href="file:///E:/IP_PROJECT/Account/Account.html?btn=Sign+In">
+							<input id="submit1" type="button" name="buynow" value="Buy Now"/></a>
+							</center>
+							</td>
+							</tr>
+							</table>
+                        </div>
+                </div>  
+<iframe src="appleairpods.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="leafsportbt.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="samsung32gb.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="syskapowerbank.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="appleearphoneconnector.html" width="100%" height="140%" style="border:none;"></iframe>				
+<iframe src="drumstonemagnifier.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="mivioac2a.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="miviroam.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="mivioctave.html" width="100%" height="140%" style="border:none;"></iframe>
+<iframe src="strontium32gb.html" width="100%" height="140%" style="border:none;"></iframe>
+<div class="footer">
+<table cellpadding="15">
+<tr>
+<td><h4>SHIPPING</h4></td>
+<td><h4>CONTACT US</h4></td>
+<td><h4>ABOUT</h4></td>
+<td><h4>NEWSLETTER</h4></td>
+</tr>
+<tr>
+<td class="footertd">
+Delivery & Returns<br>
+Ordering & Tracking<br>
+Documnetation<br>
+Payment<br>
+Privacy<br>
+F.A.Q's<br>
+</td>
+<td class="footertd">
+<img src="location.png">&nbsp;<h3>Address:</h3><br>123 Gujarat High Court,Ahmedabad,India<br>
+<br>
+<img src="phone.png">&nbsp;<h3>Phone:</h3><br>0987654321<br>
+<br>
+<img src="gmail.png">&nbsp;<h3>Email:</h3><br>xyz@gmail.com<br>
+</td>
+<td class="footertd">
+<a class="footertd" href="file:///E:/IP_PROJECT/about%20(2).html">About Us</a>
+</td>
+<td class="footertd">
+Company News<br>
+Indusrty News<br>
+Q & A<br>
+Events<br>
+</td>
+
+</tr>
+</table>
+
+</div>
+</body>
+
+</html>

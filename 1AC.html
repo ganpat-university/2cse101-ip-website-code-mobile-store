@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<style>
+body{
+	padding:100px;
+	}
+sup{color:red;}
+input{
+	height:30px;
+	width:360px;
+	}
+#t1{
+	font-size:40px;
+	font-weight:bold;
+	}
+.title{
+	font-size:20px;
+	font-weight:bold;
+	}
+.redirect{
+	background-color:#FF6600;
+	font-size:15px;
+	height:30px;
+	width:360px;
+	border:none;
+	outline:1px solid black;
+	opacity:0.7;
+	}
+.redirect:hover{
+	opacity:1;
+		}
+#tb1{
+	padding:20px;
+	border:1px solid gray;
+	}
+</style>
+<script type="text/javascript">
+    function validate(){
+		
+		if(document.caa.n.value==""){
+		alert("Please Provide Your Name!");
+		document.caa.n.focus();
+		return false;
+				}
+				
+		if(document.caa.mn.value==""){
+		alert("Please Provide Your Mobile Number!");
+		document.caa.mn.focus();
+		return false;
+				}		
+				
+		if(document.caa.p.value==""){
+		alert("Please Provide Your Password!");
+		document.caa.p.focus();
+		return false;
+				}	
+
+		if(document.caa.mn.value.length != 10){
+		alert("Please Enter Your 10 Digit Mobile Number!");
+		document.caa.mn.focus();
+		return false;
+				}
+				
+		if(document.caa.p.value.length < 6){
+		alert("Please Enter at least 6 Characters in Password!");
+		document.caa.p.focus();
+		return false;
+				}
+			return ( true );
+	}
+</script>
+<body>
+<center>
+<div>
+<table id="tb1">
+<form name="caa" action="2p.html">
+<tr><td id="t1">Create Account</td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td class="title">Your Name&nbsp;<sup>*</sup></td></tr>
+<tr><td><input type="text" name="n"  placeholder="Username"/></td></tr>
+
+<tr><td class="title">Mobile Number&nbsp;<sup>*</sup></td></tr>
+<tr><td><input type="number" name="mn"/></td></tr>
+
+<tr><td class="title">E-mail(optional)</td></tr>
+<tr><td><input type="mail" name="em"/></td></tr>
+
+<tr><td class="title">Password&nbsp;<sup>*</sup></td></tr>
+<tr><td><input type="password" name="p" placeholder="At least 6 Characters"/></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td><input class="redirect" type="submit" name="btn" value="Continue" onclick="return validate()"/></td></tr>
+</form>
+</table>
+</div>
+<br>
+<hr width="360px">
+<div>
+<table>
+<form name="f1" action="Account.html">
+<tr><td class="title" align="center">Already Have an Account?</td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td><input class="redirect" type="submit" name="btn" value="Sign In"/></td></tr>
+</form>
+</table>
+</div>
+</center>
+</body>
+</html>

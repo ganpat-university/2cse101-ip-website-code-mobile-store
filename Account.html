@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Sign In
+</title>
+<style>
+body{
+	padding:100px;
+	}
+#p1{
+	font-size:40px;
+	font-weight:bold;
+	}
+.p2{
+	font-size:20px;
+	font-weight:bold;
+	}
+.i1{
+	height:30px;
+	width:320px;
+	}
+#i2{
+	background-color:#FF6600;
+	height:30px;
+	width:320px;
+	border:none;
+	outline:1px solid black;
+	opacity:0.7;
+	}
+#i2:hover{
+	opacity:1;
+	}
+#i3{
+	background-color:#FF6600;
+	height:30px;
+	width:360px;
+	border:none;
+	outline:1px solid black;
+	opacity:0.7;
+	}
+#i3:hover{
+	opacity:1;
+	}
+
+table{
+	padding:20px;
+	border:1px solid gray;
+	}
+</style>
+
+ <script type = "text/javascript">
+ function validate(){
+ 
+		if(document.f.un.value==""){
+		alert("Please Provide Your Mobile Number or Email!");
+		document.f.un.focus();
+		return false;
+		}
+		if(document.f.un.value.length != 10){
+		alert("Invalid Input Please Enter a Valid Input!");
+		document.f.un.focus();
+		return false;
+		} 
+		if(document.f.p.value==""){
+		alert("Please Provide Your Password!");
+		document.f.p.focus();
+		return false;
+		}
+	return ( true );
+}
+</script>
+</head>
+<body>
+<center>
+<div>
+<table>
+<tr><td><p id="p1">Login</p></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<form name="f" action="2p.html">
+<tr><td><p class="p2">Email or mobile phone number</td></tr>
+<tr><td><input class="i1" type="text" name="un"/></p></td></tr>
+<tr><td></td></tr>
+<tr><td><p class="p2">Password</td></tr>
+<tr><td><input class="i1" type="password" name="p"/></p></td></tr>
+<tr><td></td></tr>
+<tr><td><input id="i2" type="submit" name="submit" value="Continue" onclick="return validate()"/></td></tr>
+</form>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td><p>By Continuing, you agree to Conditions of<br> use and Privacy Notice.</p></td></tr>
+</table>
+</div>
+<br>
+<hr width="360px">New To Website?
+<br>
+<br>
+<div>
+<form name="1f" action="1AC.html">
+<input id="i3" type="submit" name="btn" value="Create Your New Account" style{width:400px;}/>
+</form>
+</div>
+</center>
+</body>
+</html>

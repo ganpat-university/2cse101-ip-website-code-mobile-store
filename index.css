@@ -1,0 +1,116 @@
+        .active{background: green;color: #000;}
+        body {
+            font-family: arial;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+		
+        .menu {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: navy;
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            padding: 20px 24px;
+            color: #ddd;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .menu a:hover{background: #ddd;color: #000;}
+
+        .storeimg {
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        .main{display: flex;flex-wrap: wrap;}
+        .left{width: 50%;padding: 40px;background-color: #333;color: #fff;font-size: 80px;text-align: center; transition:1s;}
+        .right{width: 50%;padding: 20px;background-color: #ddd;justify-content: center;display: flex;}
+        .r1{width: 150px;height: 200px;background: #333;margin: 15px;}
+        .r2{width: 150px;height: 200px;background: #333;margin: 15px;}
+        .r3{width: 150px;height: 200px;background: #333;margin: 15px;}
+         .footer{zoom: 100%;width: 100%;height: 300px;background: #000;color:white;}
+		.footer h3{display:inline;}
+		.footer h4{color:white;}
+		.footertd{vertical-align:top;text-decoration:none;color:white;}
+        .crt{float: right;position: fixed; right: 20px;z-index: 1;line-height: 40px;border-radius: 6px;}
+		.account{float: right;position: fixed; right: 90px;z-index: 1;line-height: 40px;border-radius: 6px;}
+        .logo{font-size: 50px;}
+
+		
+		.left:hover{
+			color:red;
+			font-size:115px;
+			}	
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height:40px;
+  outline:none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  float:left;
+  position: fixed;
+  left:20px;
+  line-height: 40px;
+  z-index:1;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

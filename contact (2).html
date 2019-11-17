@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <style>
+        .active{background: green;color: #000;}
+        body {
+            font-family: arial;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: navy;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            padding: 20px 24px;
+            color: #ddd;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .menu a:hover{background: #ddd;color: #000;}
+        .storeimg {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .footer{width: 100%;height: 300px;background: #000;}
+        .crt{float: right;position: fixed; right: 20px;z-index: 1;line-height: 40px;
+        border-radius: 6px;}
+		.account{float: right;position: fixed; right: 90px;z-index: 1;line-height: 40px;border-radius: 6px;}
+        .logo{font-size: 50px;}
+		
+		
+		
+		.footer{width: 100%;height: 300px;background: #000;color:white;}
+		.footer h3{display:inline;}
+		.footertd{vertical-align:top;text-decoration:none;color:white;}
+		
+		
+		
+		pre,p{
+	font-size:20px;
+	}
+.cip,select{
+	height:100%;
+	width:100%;
+	background-color:#98FB98;
+	font-size:120%;
+	}
+#table{
+	border:1px solid black;
+	border-collapse:collapse;
+	height:50%;
+	width:50%;
+	background-color:#98FB98;
+}
+#lens{float:right;}
+#ip{
+	display:inline;
+	height:10%;
+	width:20%;
+	font-size:120%;
+	padding-left:10px;
+	border:1px solid white;
+	border-radius:100px;
+	background-color:#FF4500;
+	}
+#header{
+	font-size:60px;
+	text-align:center;
+	background-color:#AFAFAF;
+	}
+#content{
+	padding-left:10px;
+	padding-right:10px;
+	}
+	
+	
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height:40px;
+  outline:none;
+}
+
+.dropbtn:hover .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  float:left;
+  position: fixed;
+  left:20px;
+  line-height: 40px;
+  z-index:1;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+    </style>
+	<script>
+	function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}	
+	</script>
+</head>
+
+<body>
+    <div class="header">
+		<span class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search Here....</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#i11pro">Apple</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#f11pro">Oppo</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#v15">Vivo</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#k20 pro">Redmi</a>
+    <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html#note10pro">Samsung</a>
+    <a href="#Huvawvei">Huwavei</a>
+    <a href="#Micromax">Micromax</a>
+  </div>
+</span>
+	
+            <span class="logo">Mobile Store</span>
+            <span>Your Stores Your Place</span>
+			<span class="account"><img src="account.png" width="50px" height="40px"></img></span>
+            <span class="crt"><img src="shopping_cart.png" width="50px" height="40px"></img></span>
+    </div>
+	
+	 <div class="menu">
+            <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/index.html">Home</a>
+            <a href="file:///E:/IP_PROJECT/INDEX/$new%20index/products/products.html">Products</a>
+			<a href="file:///E:/IP_PROJECT/INDEX/$new%20index/accesories/accesories.html">Accesories</a>
+            <a href="file:///E:/IP_PROJECT/about%20(2).html">About</a>
+            <a href="file:///E:/IP_PROJECT/contact%20(2).html" class="active">Contact</a>
+    </div>
+ 
+	<div id="contentup">
+<div id="content">
+<img id="lens" src="magnifyingglass.jpg">
+<h1>Contact Us</h1>
+<div class="divin">
+<a class="icon" href=""><img src="facebook.png"></a>
+<a class="icon" href=""><img src="instagram.png"></a>
+<a class="icon" href=""><img src="twitter.png"></a>
+</div>
+
+<h1>Contact For More Details</h1>
+<pre>
+Have a question or want to learn more about and how our
+website can help you to build your business?
+Simply enter the information in the fields below and we 
+will follow up with you shortly. If you are an existing 
+seller/buyer on our website and have a question, contact 
+</pre>
+
+<p>Please Enter valid entries and submit the form given below for Contacting Us.</p>
+
+<center><h1>Contact Information</h1></center>
+<table id="table" align="">
+<form name="caa">
+
+<tr>
+<td><input class="cip" type="text" name="fn" placeholder="First Name" required /></td>
+</tr>
+<tr>
+<td><input class="cip" type="text" name="ln" placeholder="Last Name" required /></td>
+</tr>
+
+<tr> 
+<td><input class="cip" type="text" name="no." placeholder="Mobile Number" required /> </td>
+</tr>
+<tr>
+<td><input class="cip" type="mail" name="em" placeholder="Contact Email" required /></td>
+</tr>
+
+<tr>
+<td>
+<select name="States">
+<option value="--Select Your State--" selected>--Select Your State--</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chattisgarh">Chattisgarh</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odhisha">Odhisha</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkhim">Sikkhim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakand">Uttarakand</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+</td>
+</tr>
+</table><br>
+<input id="ip" type="submit" value="Submit Form" onclick()="return validate()"/>
+<input id="ip" type="reset" value="Reset Form"/>
+</form>
+</div>
+	</div>
+   
+<div class="footer">
+<table cellpadding="15">
+<tr>
+<td><h4>SHIPPING</h4></td>
+<td><h4>CONTACT US</h4></td>
+<td><h4>ABOUT</h4></td>
+<td><h4>NEWSLETTER</h4></td>
+</tr>
+<tr>
+<td class="footertd">
+Delivery & Returns<br>
+Ordering & Tracking<br>
+Documnetation<br>
+Payment<br>
+Privacy<br>
+F.A.Q's<br>
+</td>
+<td class="footertd">
+<img src="location.png">&nbsp;<h3>Address:</h3><br>123 Gujarat High Court,Ahmedabad,India<br>
+<br>
+<img src="phone.png">&nbsp;<h3>Phone:</h3><br>0987654321<br>
+<br>
+<img src="gmail.png">&nbsp;<h3>Email:</h3><br>xyz@gmail.com<br>
+</td>
+<td class="footertd">
+<a class="footertd" href="file:///E:/IP_PROJECT/about%20(2).html">About Us</a>
+</td>
+<td class="footertd">
+Company News<br>
+Indusrty News<br>
+Q & A<br>
+Events<br>
+</td>
+
+</tr>
+</table>
+
+</div>
+</body>
+
+</html>
